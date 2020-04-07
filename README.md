@@ -6,7 +6,7 @@ But the most widely used single cell RNA sequencing is only generates short read
 
 Based on the foundation of our previous works, combining single-cell full-length RNA library construction and MTZL library construction technology, we were able to significantly improve the throughput of single-cell RNA sequencing on the PacBio sequencing platform, now we can obtain sufficient high-accuracy reads to accurately parse cell barcode and full-length transcript information. It's really amazing.
 
-See our wiki for more information on building libraries:
+See our wiki for more information on MTZL:
 https://github.com/shizhuoxing/BGI-Full-Length-RNA-Analysis-Pipeline/wiki
 
 In this repo, I will provide tools for analyzing MTZL scIsoSeq data, including basic data processing, cellBC extraction, expression matrix generation, and so on.
