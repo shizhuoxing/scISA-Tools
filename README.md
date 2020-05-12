@@ -1,5 +1,8 @@
 # scIsoSeq-Analysis-Tools
 
+# Author: shizhuoxing in SKLO-Sun Yat-Sen University
+#         heyingdong in BGI-Shenzhen
+
 High-throughput single-cell RNA sequencing is a powerful technique advance gene expression regulation research to a higher resolution level for single cells. Recent technological advancements in high-throughput scRNA-Seq methods such Droplet-based single-cell sequencing allow thousands of cells to be captured and sequenced in a relatively short time frame and at a fraction of the cost. Such methods rely on capture of polyadenylated mRNA transcripts followed by cDNA synthesis, pooling, amplification, library construction, and cDNA sequencing.
 
 But the most widely used single cell RNA sequencing is only generates short reads from one end of a cDNA template, limiting the reconstruction of highly diverse isofrom such as alternative splicing and structural variation. Recent advances in long-read sequencing technologies present a potential solution to the shortcomings of short-read sequencing. Full-length cDNA reads can encompass the entire sequence of transcripts, but typically suffer from higher error rates and lower sequencing depth than short-read technologies.
