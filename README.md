@@ -12,6 +12,9 @@ Based on the foundation of our previous works, combining single-cell full-length
 See our wiki for more information on MTZL:
 https://github.com/shizhuoxing/BGI-Full-Length-RNA-Analysis-Pipeline/wiki
 
+Explore more information and new idea of scIsoSeq can vist:
+https://github.com/shizhuoxing/scISA-Tools/wiki
+
 In this repo, I will provide tools for analyzing MTZL scIsoSeq data, including basic data processing, cellBC extraction, expression matrix generation, and so on.
 
 Major impact factor, gene have difference expression but how?
