@@ -1,7 +1,7 @@
 # scIsoSeq-Analysis-Tools
 
 **Authors: shizhuoxing in SKLO-Sun Yat-Sen University
-           heyingdong in BGI-Shenzhen**
+           heyingdong in BGI-Shenzhen
 
 High-throughput single-cell RNA sequencing is a powerful technique advance gene expression regulation research to a higher resolution level for single cells. Recent technological advancements in high-throughput scRNA-Seq methods such Droplet-based single-cell sequencing allow thousands of cells to be captured and sequenced in a relatively short time frame and at a fraction of the cost. Such methods rely on capture of polyadenylated mRNA transcripts followed by cDNA synthesis, pooling, amplification, library construction, and cDNA sequencing.
 
