@@ -12,7 +12,7 @@ In this repo, I will provide the tool set for analyzing HIT-scISOseq data starti
 
 For citation and more detailed information, please see our preprint paper: XXXX
 
-Dependencies
+**Dependencies**
 SMRTlink 8.0 or later, you can install it in light way: smrtlink_*.run --rootdir smrtlink --smrttools-only
 ncbi-blast-2.10.0+ or later
 R-3.4.1 or later with ggplot2 | gridExtra | grid | Seurat | DropletUtils
@@ -21,7 +21,7 @@ cDNA_Cupcake
 SQANTI3
 tappAS 1.0.1
 
-Usage
+**Usage**
 Export smrtlink blast R to your path first.
 
 export PATH=$PATH:/smrtlink/smrtcmds/bin
