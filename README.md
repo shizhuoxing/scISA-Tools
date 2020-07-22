@@ -35,7 +35,7 @@ ccs *.subreads.bam ccs.bam --min-passes 0 --min-length 50 --max-length 21000 --m
 ```
 Start from SMRTlink8.0, CCS4.0 significantly speeds up the analysis and can be easily parallelized by using `--chunk`.
 
-Note: the example_data folder in this repo have an `example.ccs.bam` for test use, which contain 5000 CCS reads produced from BGI patented HIT-scISOseq library construction protocol.
+**Note:** the example_data folder in this repo have an `example.ccs.bam` for test use, which contain 5000 CCS reads produced from BGI patented HIT-scISOseq library construction protocol.
 
 ## Step2 Classify CCS by primer blast
 
@@ -128,7 +128,7 @@ We adopted a similar strategy of 10X Genomics `CellRanger` for cellBC and UMI co
 /path/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/bin/python cellBC_UMI_corrector.py -w 3M-february-2018.txt -t 0.95 --input isoseq_flnc.BarcodeUMI.fastq --tmap flnc.filtered.tmap --output ./flnc.cellBC_UMI_correction.xls --cellranger_path /path/cellranger-3.1.0/
 ```
 
-Note: you can find `3M-february-2018.txt.gz` file in example_data folder in this repo or in your cellranger path: `/path/cellranger-3.1.0/cellranger-cs/3.1.0/lib/python/cellranger/barcodes/3M-february-2018.txt.gz`
+**Note:** you can find `3M-february-2018.txt.gz` file in example_data folder in this repo or in your cellranger path: `/path/cellranger-3.1.0/cellranger-cs/3.1.0/lib/python/cellranger/barcodes/3M-february-2018.txt.gz`
 
 ## Step6 Generation of Single Cell Gene Count matrix
 
@@ -214,7 +214,7 @@ After quality filtering of each sample’s single cell gene and isoform expressi
 /youpath/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/bin/python scMatrix2CellRangerH5.py –m ./TEST -c  example.filtered_feature_bc_matrix.h5 -o ./test.h5
 ```
 
-Note: the example_data folder in this repo have an `example.filtered_feature_bc_matrix.h5`, you can copy and use this file for any `scMatrix2CellRangerH5` task.
+**Note:** the example_data folder in this repo have an `example.filtered_feature_bc_matrix.h5`, you can copy and use this file for any `scMatrix2CellRangerH5` task.
 
 ### 10.2) example for CellRanger reanalyze.
 
