@@ -10,7 +10,7 @@ Based on our previous development works, and by combining 10X genomics platform 
 
 In this repo, I will provide the tool set for analyzing HIT-scISOseq data starting from raw data. This is a comprehensive tool including basic data processing, cellBC extraction, expression matrix generation, and so on. It has been highly modularized so that you can combine various modules to address your need.
 
-For citation and more detailed information, please see our preprint paper: **HIT-scISOseq: High-throughput and High-accuracy Single-cell Full-length Isoform Sequencing for Corneal Epithelium (https://www.biorxiv.org/content/10.1101/2020.07.27.222349v1)**
+For citation and more detailed information, please see our preprint paper: [HIT-scISOseq: High-throughput and High-accuracy Single-cell Full-length Isoform Sequencing for Corneal Epithelium](https://www.biorxiv.org/content/10.1101/2020.07.27.222349v1)
 
 # Dependencies
 * SMRTlink 8.0 or later, you can install it in light way: `smrtlink_*.run --rootdir smrtlink --smrttools-only`
