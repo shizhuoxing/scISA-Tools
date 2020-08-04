@@ -150,14 +150,14 @@ perl scGene_matrix.pl -tgsbcumi flnc.cellBC_UMI_correction.xls -tmap flnc.filter
 
 After mapping of FLNC to genome, we then using `cDNA_Cupcake`(https://github.com/Magdoll/cDNA_Cupcake) python script `collapse_isoforms_by_sam.py` to collapse all samples isoforms, and then we using `SQANTI3`(https://github.com/ConesaLab/SQANTI3) to characterization non-redundant isoforms.
 
-7.1) example for collapsing.
+### 7.1) example for collapsing.
 
 ```
 sort -k 3,3 -k 4,4n isoseq_flnc.Transcript.sam > isoseq_flnc.Transcript.sorted.sam
 /path/anaCogent/bin/python /path/anaCogent/bin/collapse_isoforms_by_sam.py --input isoseq_flnc.BarcodeUMI.fastq --fq -s isoseq_flnc.Transcript.sorted.sam -o TEST
 ```
 
-7.2) example using SQANTI3.
+### 7.2) example using SQANTI3.
 
 ```
 python /path/SQANTI3-master/sqanti3_qc.py ./all.collapsed.rep.fa ref.genes.gtf ref.genome.fa -d ./TEST --isoAnnotLite -t 30
