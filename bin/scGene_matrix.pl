@@ -9,7 +9,7 @@ sub usage {
 
 Despriprion: BGI version's scIsoSeq gene expression count matrix generation program.
 Author: shizhuoxing\@dingtalk.com
-Data: 20200603
+Date: 20200603
 Usage: perl $0 -tgsbcumi bc_correction.xls -tmap filtered.tmap -topbc 2000 -sample test -outdir ./
 
 Options:
