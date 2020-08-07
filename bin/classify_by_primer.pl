@@ -8,7 +8,7 @@ sub usage {
 
 Despriprion: BGI version's full-length transcript detection algorithm for BGI patented linking scIsoSeq library construction protocol.
 Author: shizhuoxing\@dingtalk.com
-Data: 20191231
+Date: 20191231
 Usage: classify_by_primer -blastm7 mapped.m7 -ccsfq ccs.fq -min_primerlen 16 -min_isolen 50 -outdir ./
 
 Options:
