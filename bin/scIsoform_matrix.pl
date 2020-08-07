@@ -9,7 +9,7 @@ sub usage {
 
 Despriprion: BGI version's scIsoSeq isoform expression count matrix generation program.
 Author: shizhuoxing\@dingtalk.com
-Data: 20200603
+Date: 20200603
 Usage: perl $0 -tgsbcumi bc_correction.xls -group collapsed.group.txt -topbc 2000 -sample test -outdir ./
 
 Options:
