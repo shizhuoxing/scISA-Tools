@@ -117,7 +117,7 @@ gffcompare -r ref.genes.gtf isoseq_flnc.Transcript.gff -o flnc
 ### 4.3) filtering tmap for keep uniq mapping result only.
 
 ```
-perl filter.tmap.pl flnc.tmap > flnc.filtered.tmap
+perl filter.tmap.pl flnc.isoseq_flnc.Transcript.gff.tmap > flnc.filtered.tmap
 ```
 
 ## Step5 Cell Barcode and UMI correction
