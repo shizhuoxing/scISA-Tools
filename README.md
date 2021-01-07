@@ -18,8 +18,6 @@ For citation and more detailed information, please see our preprint paper: [HIT-
 * R-3.4.1 or later with `ggplot2 | gridExtra | grid | Seurat | DropletUtils`
 * CellRanger 3.1.0 or later
 * cDNA_Cupcake
-* SQANTI3
-* tappAS 1.0.1
 
 # Usage
 Export `smrtlink` `blast` `R` to your path first.
