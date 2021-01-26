@@ -8,7 +8,7 @@ Single-cell RNA sequencing is a powerful technique that advances gene expression
 
 A major challenge for scRNA research is that the most widely used single cell RNA sequencing only generates short reads from one end of a cDNA template, thus limiting the reconstruction of highly diverse isoform such as alternative splicing and structural variation. Recent advances in long-read sequencing technologies present a potential solution to the shortcomings of short-read sequencing, as full-length cDNA reads can now encompass the entire sequence of transcripts. However, these long-read technologies typically suffer from higher error rates (Oxford Nanopore) and/or lower sequencing depth (PacBio) than short-read instruments.
 
-Based on our previous development works, and by combining 10X genomics platform and HIT-scISOseq library construction technology, we have significantly improved the throughput of single-cell RNA sequencing using PacBio Sequel II platform. This has made it possible for us to obtain sufficient high-accuracy reads, and subsequently parse cell barcode, UMI and full-length transcript information in one dataset for thousands of single cells. It's really amazing!
+Based on our previous development works, and by combining 10x genomics platform and HIT-scISOseq library construction technology, we have significantly improved the throughput of single-cell RNA sequencing using PacBio Sequel II platform. This has made it possible for us to obtain sufficient high-accuracy reads, and subsequently parse cell barcode, UMI and full-length transcript information in one dataset for thousands of single cells. It's really amazing!
 
 In this repo, I will provide the tool set for analyzing HIT-scISOseq data starting from raw data. This is a comprehensive tool including basic data processing, cellBC extraction, expression matrix generation, and so on. It has been highly modularized so that you can combine various modules to address your need.
 
@@ -51,7 +51,7 @@ makeblastdb -in primer.fa -dbtype nucl
 blastn -query ccs.fa -db primer.fa -outfmt 7 -word_size 5 > mapped.m7
 ```
 
-The following primer sequence is commonly used for PacBio original scIsoSeq library construction protocol with 10X genomics and BGI patented HIT-scISOseq library construction protocol with 10X genomics.
+The following primer sequence is commonly used for PacBio original scIsoSeq library construction protocol with 10x genomics and BGI patented HIT-scISOseq library construction protocol with 10x genomics.
 
 ```
 $ cat primer.fa
@@ -65,13 +65,13 @@ Have to note that, here primer_F means 5’ primer, primer_S means 3’ primer, 
 
 ### 2.3) classify CCS by primer
 
-Here is an example for classifying CCS generate from PacBio original scIsoSeq library construction protocol with 10X genomics and BGI patented HIT-scISOseq library construction protocol with 10X genomics.
+Here is an example for classifying CCS generate from PacBio original scIsoSeq library construction protocol with 10x genomics and BGI patented HIT-scISOseq library construction protocol with 10x genomics.
 
 ```
 perl classify_by_primer.pl -blastm7 mapped.m7 -ccsfq ccs.fq -min_primerlen 16 -min_isolen 50 -outdir ./
 ```
 
-`classify_by_primer` wraps a tool to detect full-length transcript from CCS base on PacBio original scIsoSeq library construction protocol with 10X genomics and BGI patented HIT-scISOseq library construction protocol with 10X genomics.
+`classify_by_primer` wraps a tool to detect full-length transcript from CCS base on PacBio original scIsoSeq library construction protocol with 10x genomics and BGI patented HIT-scISOseq library construction protocol with 10x genomics.
 
 ```
 $ perl classify_by_primer.pl -h
@@ -122,7 +122,7 @@ perl filter.tmap.pl flnc.isoseq_flnc.Transcript.gff.tmap > flnc.filtered.tmap
 
 ## Step5 Cell Barcode and UMI correction
 
-We adopted a similar strategy of 10X Genomics `CellRanger` for cellBC and UMI correction, we have warps `CellRanger` cell barcode and UMI correction function as a module in our pipeline, named cellBC_UMI_corrector, these methods using long reads data independently, no need additional short read data for guiding.
+We adopted a similar strategy of 10x Genomics `CellRanger` for cellBC and UMI correction, we have warps `CellRanger` cell barcode and UMI correction function as a module in our pipeline, named cellBC_UMI_corrector, these methods using long reads data independently, no need additional short read data for guiding.
 
 ```
 /path/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/bin/python cellBC_UMI_corrector.py -w 3M-february-2018.txt -t 0.95 --input isoseq_flnc.BarcodeUMI.fastq --tmap flnc.filtered.tmap --output ./flnc.cellBC_UMI_correction.xls --cellranger_path /path/cellranger-3.1.0/
