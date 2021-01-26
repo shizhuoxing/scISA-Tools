@@ -2,7 +2,7 @@
 
 **Authors: Zhuo-Xing Shi, SKLO, Sun Yat-Sen University; Ying-Dong He, BGI-Shenzhen**
 
-*If you are looking for a single cell matrix interactive transformation tool you can visit this link directly: https://github.com/shizhuoxing/scISA-Tools/wiki/scMatrixInteraction*
+*(If you are looking for a single cell matrix interactive transformation tool you can visit this link directly: https://github.com/shizhuoxing/scISA-Tools/wiki/scMatrixInteraction)*
 
 Single-cell RNA sequencing is a powerful technique that advances gene expression regulation research to a higher resolution level for single cells. Recent advancements in scRNA-Seq methods (e.g., Droplet-based) allow thousands of cells to be captured and sequenced in a relatively short time frame at a fraction of the cost. They rely on capture of polyadenylated mRNA transcripts, followed by cDNA synthesis, pooling, amplification, library construction, and cDNA sequencing.
 
