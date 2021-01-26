@@ -41,5 +41,5 @@ string<-paste(outdir,sample_name,".umap_projection.csv",sep="")
 write.table(mat,file=string,sep=",",quote=FALSE,row.names=FALSE)
 
 mat<-as.data.frame(pbmc@active.ident)
-string<-paste(outdir,sample_name,".cellBC_cluster.csv",sep="")
+string<-paste(outdir,sample_name,".cellBC_categories.csv",sep="")
 write.table(mat,file=string,sep=",",quote=FALSE,row.names=TRUE, col.names =FALSE)
