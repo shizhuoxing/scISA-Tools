@@ -48,7 +48,7 @@ open IN,"$ccsfq";
 open FL1,">$outdir/isoseq_flnc.BarcodeUMI.fastq";
 open FL2,">$outdir/isoseq_flnc.Transcript.fastq";
 open BARCODE,">$outdir/isoseq.PrimerStat.csv";
-print BARCODE "SeqID\,SeqClassify\,SeqLength\,Primer1\,Primer1_BlastIdentity\,Primer1_BlastLength\,Primer2\,Primer2_BlastIdentity\,Primer2_BlastLength\,cellBC\tUMI\tPolyAtailLength\,PolyAtail\n";
+print BARCODE "SeqID\,SeqClassify\,SeqLength\,Primer1\,Primer1_BlastIdentity\,Primer1_BlastLength\,Primer2\,Primer2_BlastIdentity\,Primer2_BlastLength\,cellBC\,UMI\,PolyAtailLength\,PolyAtail\n";
 while($id=<IN>){
 	chomp $id;
 	@a=();@a=split(/ /,$id);
