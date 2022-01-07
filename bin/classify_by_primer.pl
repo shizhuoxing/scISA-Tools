@@ -97,7 +97,8 @@ while($id=<IN>){
 			$bcumi=~tr/ATCGatcg/TAGCtacg/;
 			$bcumiqv=reverse substr($qv,-28);
 			
-			if($tag eq "FL" and $sign{$mm-1}==0){
+			$dis=$k-$p{$mm-1}[3];
+			if($tag eq "FL" and $sign{$mm-1}==0 and $dis>0){
 				$tseq=substr($seq,0,-28);
 				$tqv=substr($qv,0,-28);
 				$pa=denovo_poly($tseq);
