@@ -211,7 +211,7 @@ After quality filtering of each sample’s single cell gene and isoform expressi
 ### 10.1) example for convert matrix to CellRanger h5 format.
 
 ```
-/youpath/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/bin/python scMatrix2CellRangerH5.py –m ./TEST -c  example.filtered_feature_bc_matrix.h5 -o ./test.h5
+/youpath/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/bin/python scMatrix2CellRangerH5.py –m ./TEST -c  example.filtered_feature_bc_matrix.h5 -o ./test.h5 --cellranger_path /youpath/cellranger-3.1.0
 ```
 
 **Note:** the example_data folder in this repo have an `example.filtered_feature_bc_matrix.h5`, you can copy and use this file for any `scMatrix2CellRangerH5` task.
