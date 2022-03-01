@@ -154,7 +154,7 @@ After mapping of FLNC to genome, we then using `cDNA_Cupcake`(https://github.com
 
 ```
 sort -k 3,3 -k 4,4n isoseq_flnc.Transcript.sam > isoseq_flnc.Transcript.sorted.sam
-/path/anaCogent/bin/python /path/anaCogent/bin/collapse_isoforms_by_sam.py --input isoseq_flnc.BarcodeUMI.fastq --fq -s isoseq_flnc.Transcript.sorted.sam -o TEST
+/path/anaCogent/bin/python /path/anaCogent/bin/collapse_isoforms_by_sam.py --input isoseq_flnc.Transcript.fastq --fq -s isoseq_flnc.Transcript.sorted.sam -o TEST
 ```
 
 ### 7.2) example using SQANTI3.
