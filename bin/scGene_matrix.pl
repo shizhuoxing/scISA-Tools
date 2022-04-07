@@ -102,9 +102,14 @@ print OUT1 "$str\n";
 foreach $k1(@key1){
 	print OUT1 "\"$k1\"";
 	foreach $k2(@key2){
-		@key3=();@key3=keys %{$matrix{$k1}{$k2}};
-		$count=@key3;
-		$tgsbc{$k2}+=$count;
+                $count=0;
+                if(defined $matrix{$k1}{$k2}){
+                        @key3=();@key3=keys %{$matrix{$k1}{$k2}};
+                        $count=@key3;
+                }
+		# @key3=();@key3=keys %{$matrix{$k1}{$k2}};
+		# $count=@key3;
+		# $tgsbc{$k2}+=$count;
 		print OUT1 ",$count";
 	}
 	print OUT1 "\n";
