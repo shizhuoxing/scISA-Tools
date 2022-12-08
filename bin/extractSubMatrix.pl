@@ -38,7 +38,7 @@ close IN;
 
 open IN,"$inputematrix";
 open OUT,">$outputmatrix";
-$head=<IN>;$head=~s/^\,//;
+$head=<IN>;chomp $head;$head=~s/^\,//;
 @a=();@a=split(/\,/,$head);
 @pos=();$mark=0;$str="";
 foreach $k(@a){
