@@ -99,6 +99,8 @@ After FLNC detection and primer, cellBC, UMI and polyA tail trimming, the remain
 minimap2 -ax splice -t 6 -uf --secondary=no -C5 -t 5 ref.genome.fa isoseq_flnc.Transcript.fastq > isoseq_flnc.Transcript.sam
 ```
 
+**Due to years of development, tools for RNA isoform recognition and quantification from long-read RNA sequencing data are evolving rapidly. Therefore, after obtaining well-aligned FLNC reads, it is recommended to use 【IsoQuant】 for subsequent isoform recognition and quantification to achieve more accurate results!**
+
 ## Step4 Using gffcompare mapping FLNC to reference annotation
 
 After FLNC mapping to reference genome, using `gffcompare`(https://ccb.jhu.edu/software/stringtie/gffcompare.shtml) to mapping FLNC to reference annotation.
