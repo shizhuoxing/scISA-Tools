@@ -4,6 +4,8 @@
 
 *(If you are looking for a single cell matrix interactive transformation tool you can visit this link directly: https://github.com/shizhuoxing/scISA-Tools/wiki/scMatrixInteraction)*
 
+*You can be found in the following web page and download CellRanger 3.1.0: https://www.10xgenomics.com/support/software/cell-ranger/downloads/previous-versions*
+
 Single-cell RNA sequencing is a powerful technique that advances gene expression regulation research to a higher resolution level for single cells. Recent advancements in scRNA-Seq methods (e.g., Droplet-based) allow thousands of cells to be captured and sequenced in a relatively short time frame at a fraction of the cost. They rely on capture of polyadenylated mRNA transcripts, followed by cDNA synthesis, pooling, amplification, library construction, and cDNA sequencing.
 
 A major challenge for scRNA research is that the most widely used single cell RNA sequencing only generates short reads from one end of a cDNA template, thus limiting the reconstruction of highly diverse isoform such as alternative splicing and structural variation. Recent advances in long-read sequencing technologies present a potential solution to the shortcomings of short-read sequencing, as full-length cDNA reads can now encompass the entire sequence of transcripts. However, these long-read technologies typically suffer from higher error rates (Oxford Nanopore) and/or lower sequencing depth (PacBio) than short-read instruments.
@@ -18,7 +20,7 @@ For citation and more detailed information, please see our preprint paper: [High
 * SMRTlink 8.0 or later, you can install it in light way: `smrtlink_*.run --rootdir smrtlink --smrttools-only`
 * ncbi-blast-2.10.0+ or later
 * R-3.4.1 or later with `ggplot2 | gridExtra | grid | Seurat | DropletUtils`
-* CellRanger 3.1.0 or later
+* CellRanger 3.1.0
 * cDNA_Cupcake
 
 # Usage
